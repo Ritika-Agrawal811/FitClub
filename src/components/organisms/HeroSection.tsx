@@ -9,7 +9,7 @@ import HeroStatisticsGroup from '@/components/organisms/HeroStatisticsGroup'
 
 const HeroSection = () => {
     return (
-        <header className={clsx('h-screen p-4 pb-0', 'flex flex-col')}>
+        <header className={clsx('min-h-screen p-8 pb-0', 'flex flex-col', 'bg-texture bg-primary')}>
             <Navbar />
             <section className="grid grow grid-cols-4">
                 {/* left section */}
@@ -59,7 +59,7 @@ const HeroSection = () => {
                         alt=""
                         width="600"
                         height="900"
-                        className={clsx('absolute aspect-auto w-full', 'bottom-0')}
+                        className={clsx('absolute aspect-auto w-full', 'bottom-0', 'z-20')}
                     />
 
                     <Image
@@ -70,7 +70,7 @@ const HeroSection = () => {
                         className={clsx(
                             'absolute aspect-auto w-4/5',
                             '-left-1/4 top-1/2 -translate-y-1/2',
-                            '-z-10 -rotate-45'
+                            'z-10 -rotate-45'
                         )}
                     />
                 </aside>

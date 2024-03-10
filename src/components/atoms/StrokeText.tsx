@@ -6,7 +6,7 @@ type StrokeTextProps = {
 }
 
 const StrokeText: React.FC<StrokeTextProps> = ({ title, className }) => {
-    return <span className={clsx('font-arial text-transparent stroke-text', className)}>{title}</span>
+    return <span className={clsx('font-arial tracking-wider text-transparent stroke-text', className)}>{title}</span>
 }
 
 export default StrokeText

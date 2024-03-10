@@ -36,7 +36,7 @@ const config: Config = {
         plugin(function ({ addUtilities }) {
             addUtilities({
                 '.stroke-text': {
-                    '-webkit-text-stroke': '2px',
+                    '-webkit-text-stroke': '1px',
                     '-webkit-text-stroke-color': '#fff',
                 },
             })
