@@ -1,5 +1,5 @@
-import Image from 'next/image'
+import HeroSection from '@/components/organisms/HeroSection'
 
 export default function Home() {
-    return <h1 className="mt-10 bg-red-600">Hello</h1>
+    return <HeroSection />
 }
