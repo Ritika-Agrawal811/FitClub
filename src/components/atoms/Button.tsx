@@ -32,6 +32,6 @@ const buttonStyles = {
     },
     variant: {
         fill: 'bg-orange-600',
-        outline: 'border-2 border-orange-400 text-orange-400',
+        outline: 'border-2 border-orange-400',
     },
 }
