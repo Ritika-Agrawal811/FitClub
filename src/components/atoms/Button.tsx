@@ -31,7 +31,7 @@ const buttonStyles = {
         big: 'px-10 py-3.5',
     },
     variant: {
-        fill: 'bg-orange',
-        outline: 'border-2 border-orange',
+        fill: 'bg-orange-600',
+        outline: 'border-2 border-orange-400 text-orange-400',
     },
 }

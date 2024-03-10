@@ -20,7 +20,7 @@ const Navbar = () => {
                                 className={clsx(
                                     'text-lg',
                                     'text-white',
-                                    'transition-colors duration-100 hover:text-orange'
+                                    'transition-colors duration-100 hover:text-orange-400'
                                 )}>
                                 <Link href="">{link}</Link>
                             </li>
@@ -35,4 +35,4 @@ const Navbar = () => {
 
 export default Navbar
 
-const navLinks = ['Programs', 'Why Us', 'Plans', 'Testimonials']
+const navLinks = ['Home', 'About Us', 'Programs', 'Plans', 'Testimonials']

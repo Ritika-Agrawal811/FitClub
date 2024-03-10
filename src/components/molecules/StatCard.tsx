@@ -8,7 +8,7 @@ type StatCardProps = {
 const StatCard: React.FC<StatCardProps> = ({ statCount, title }) => {
     return (
         <article className={clsx('w-1/5', 'flex flex-col items-center gap-2', 'border border-white', 'py-4')}>
-            <h4 className="text-4xl font-bold text-orange">
+            <h4 className="text-4xl font-bold text-orange-400">
                 {statCount}
                 <span className="text-white">+</span>
             </h4>

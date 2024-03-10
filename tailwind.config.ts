@@ -14,7 +14,10 @@ const config: Config = {
                 '90': '90%',
             },
             colors: {
-                orange: '#f48915',
+                orange: {
+                    400: '#f48915',
+                    600: '#ed4809',
+                },
                 primary: '#3c3f45',
                 gray: {
                     100: '#D9D9D9',

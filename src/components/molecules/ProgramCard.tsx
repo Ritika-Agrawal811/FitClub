@@ -20,7 +20,7 @@ const ProgramCard: React.FC<ProgramCardProps> = ({ title, description, icon, ind
                 'relative bg-gray-900',
                 'before:absolute before:-bottom-12 before:-right-12 before:h-24 before:w-24 before:rotate-45 before:bg-white'
             )}>
-            <h3 className={clsx('text-2xl ', 'text-center font-medium uppercase tracking-wider text-orange')}>
+            <h3 className={clsx('text-2xl ', 'text-center font-medium uppercase tracking-wider text-orange-400')}>
                 {title}
             </h3>
             <p className="mt-8 px-6 text-gray-100">{description}</p>
@@ -29,11 +29,11 @@ const ProgramCard: React.FC<ProgramCardProps> = ({ title, description, icon, ind
                     'h-24 w-24',
                     'flex items-center justify-center',
                     'absolute -bottom-14 left-1/2 -translate-x-1/2',
-                    'mx-auto rounded-full bg-orange outline outline-4 outline-offset-8 outline-orange'
+                    'mx-auto rounded-full bg-orange-400 outline outline-4 outline-offset-8 outline-orange-400'
                 )}>
                 <Icon type={icon} color="#fff" className="h-12 w-24" />
             </div>
-            <span className="absolute -bottom-20 left-3 text-6xl font-bold text-orange">0{index + 1}</span>
+            <span className="absolute -bottom-20 left-3 text-6xl font-bold text-orange-400">0{index + 1}</span>
         </article>
     )
 }

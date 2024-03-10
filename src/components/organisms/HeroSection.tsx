@@ -22,7 +22,7 @@ const HeroSection = () => {
                             'py-2 pl-3 pr-5'
                         )}>
                         <p className="flex items-center gap-2">
-                            <span className={clsx('rounded-full bg-orange', 'px-3.5 py-2.5')}>
+                            <span className={clsx('rounded-full bg-orange-400', 'px-3.5 py-2.5')}>
                                 The Best Fitness Club
                             </span>
                             in the Town
@@ -38,7 +38,7 @@ const HeroSection = () => {
                     {/* intro-line */}
                     <p className="mt-4 text-lg text-gray-100">
                         In here we will help you to shape and build your ideal body and{' '}
-                        <span className="text-xl font-medium uppercase text-orange">
+                        <span className="text-xl font-medium uppercase text-orange-400">
                             live up your life to the fullest.
                         </span>
                     </p>
