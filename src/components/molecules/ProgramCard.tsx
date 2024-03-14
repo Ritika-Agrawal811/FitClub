@@ -8,7 +8,7 @@ import Icon from '@/components/atoms/Icon'
 type ProgramCardProps = {
     title: string
     description: string
-    icon: (typeof Icons)[keyof typeof Icons]
+    icon: keyof typeof Icons
     index: number
 }
 

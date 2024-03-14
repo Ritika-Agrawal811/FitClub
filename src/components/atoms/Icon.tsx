@@ -1,16 +1,16 @@
 import React from 'react'
 
 type IconProps = {
-    type: (typeof Icons)[keyof typeof Icons]
+    type: keyof typeof Icons
     className?: string
 }
 
 export const Icons = {
-    DUMBBELL: 'dumbbell',
-    RUNNING_MAN: 'running_man',
-    FIRE: 'fire',
-    HEARTBEAT: 'heartbeat',
-    TRAINER: 'trainer',
+    DUMBBELL: 'DUMBBELL',
+    RUNNING_MAN: 'RUNNING_MAN',
+    FIRE: 'FIRE',
+    HEARTBEAT: 'HEARTBEAT',
+    TRAINER: 'TRAINER',
 } as const
 
 const Icon: React.FC<IconProps> = ({ type, className }) => {
