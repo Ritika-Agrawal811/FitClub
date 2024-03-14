@@ -35,7 +35,7 @@ const AboutUs = () => {
                 </div>
                 <div>
                     <h2 className={clsx('text-5xl', 'font-bold uppercase leading-tight text-white')}>
-                        Get Ready To Reach your <span className="text-orange">fitness goal</span>
+                        Get Ready To Reach your <span className="text-orange-400">fitness goal</span>
                     </h2>
                     <p className="mt-6 text-gray-100">
                         We are a gym that is committed to helping poeple reach their fitness goals. We offer a variety
@@ -44,11 +44,11 @@ const AboutUs = () => {
                         state-of-the-art facilities, and a welcoming atmosphere, We are here to support you on your
                         fitness journey every step of the way.
                     </p>
-                    <p className="mb-10 mt-6 text-gray-100">
+                    <p className="mt-6 text-gray-100">
                         We believe that everyone should have access to the benefits of exercise and a healthy body and
                         life. Get to know us better and discover how we can help you unlock your full potential.{' '}
                     </p>
-                    <Button label="Request Free Trial" variant="fill" />
+                    <Button label="Request Free Trial" variant="fill" className="mt-10" />
                 </div>
             </Wrapper>
         </Wrapper>

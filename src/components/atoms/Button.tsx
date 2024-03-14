@@ -3,18 +3,20 @@ import clsx from 'clsx'
 type ButtonProps = {
     label: string
     onClick?: () => void
+    className?: string
     variant: 'outline' | 'fill'
     size?: 'small' | 'normal' | 'big'
 }
 
-const Button = ({ variant, label, onClick, size = 'normal' }: ButtonProps) => {
+const Button = ({ variant, label, className, onClick, size = 'normal' }: ButtonProps) => {
     return (
         <button
             className={clsx(
                 'cursor-pointer capitalize',
                 'text-lg font-medium text-white',
                 buttonStyles.size[size],
-                buttonStyles.variant[variant]
+                buttonStyles.variant[variant],
+                className
             )}
             onClick={onClick}>
             {label}
