@@ -1,4 +1,5 @@
 import React from 'react'
+import { FaArrowLeft } from 'react-icons/fa6'
 
 type IconProps = {
     type: keyof typeof Icons
@@ -13,6 +14,7 @@ export const Icons = {
     TRAINER: 'TRAINER',
     TICK: 'TICK',
     QUOTES: 'QUOTES',
+    ARROW_LEFT: 'ARROW_LEFT',
 } as const
 
 const Icon: React.FC<IconProps> = ({ type, className }) => {
@@ -125,6 +127,9 @@ const Icon: React.FC<IconProps> = ({ type, className }) => {
                     <path d="M30,32c-0.553,0-1-0.447-1-1c0-7.72,6.28-14,14-14c0.553,0,1,0.447,1,1s-0.447,1-1,1 c-6.617,0-12,5.383-12,12C31,31.553,30.553,32,30,32z" />
                 </svg>
             )
+
+        case Icons.ARROW_LEFT:
+            return <FaArrowLeft className={className} />
     }
 }
 

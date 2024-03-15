@@ -3,6 +3,7 @@ import HeroSection from '@/components/organisms/HeroSection'
 import OpeningHours from '@/components/organisms/OpeningHours'
 import Programs from '@/components/organisms/Programs'
 import WhyUs from '@/components/organisms/WhyUs'
+import FitnessClass from '@/components/organisms/FitnessClass'
 
 export default function Home() {
     return (
@@ -11,6 +12,7 @@ export default function Home() {
             <AboutUs />
             <Programs />
             <WhyUs />
+            <FitnessClass />
             <OpeningHours />
         </main>
     )

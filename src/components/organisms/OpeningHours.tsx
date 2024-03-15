@@ -12,7 +12,7 @@ const OpeningHours = () => {
             className={clsx(
                 'relative',
                 'before:absolute before:inset-0 before:-z-10 before:opacity-50',
-                'before:bg-gradient-to-t before:from-orange-600 before:via-orange-400 before:via-70%'
+                'before:bg-gradient-to-t before:from-orange-400'
             )}>
             <Image
                 src="/gym-equipment.jpg"
