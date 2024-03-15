@@ -9,7 +9,7 @@ import Icon from '@/components/atoms/Icon'
 
 const WhyUs = () => {
     return (
-        <Wrapper variant="main" className="my-40">
+        <Wrapper variant="main" className="mt-40">
             <Wrapper variant="section" className={clsx('grid grid-cols-2 gap-20')}>
                 <div>
                     <h2 className={clsx('text-5xl', 'font-bold uppercase leading-tight text-gray-900')}>
