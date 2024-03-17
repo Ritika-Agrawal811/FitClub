@@ -1,10 +1,11 @@
 import clsx from 'clsx'
+import { Variant } from '@/types/common'
 
 type ButtonProps = {
     label: string
     onClick?: () => void
     className?: string
-    variant: 'outline' | 'fill'
+    variant: Variant
     size?: 'small' | 'normal' | 'big'
 }
 

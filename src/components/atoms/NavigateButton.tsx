@@ -1,12 +1,13 @@
 import clsx from 'clsx'
+import { Direction, Variant } from '@/types/common'
 
 // components
 import Icon from './Icon'
 
 type NavigateButtonProps = {
     className?: string
-    variant: 'fill' | 'outline'
-    type: 'next' | 'prev'
+    variant: Variant
+    type: Direction
     onClick?: () => void
 }
 

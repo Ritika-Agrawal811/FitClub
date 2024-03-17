@@ -1,6 +1,6 @@
 import React from 'react'
 import clsx from 'clsx'
-import { Icons } from '@/components/atoms/Icon'
+import { IconsList } from '@/types/common'
 
 // components
 import Icon from '@/components/atoms/Icon'
@@ -8,7 +8,7 @@ import Icon from '@/components/atoms/Icon'
 type ProgramCardProps = {
     title: string
     description: string
-    icon: keyof typeof Icons
+    icon: IconsList
     index: number
 }
 

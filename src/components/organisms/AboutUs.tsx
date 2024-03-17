@@ -1,5 +1,4 @@
 import clsx from 'clsx'
-import { Icons } from '@/components/atoms/Icon'
 
 // components
 import Wrapper from '@/components/atoms/Wrapper'
@@ -27,7 +26,7 @@ const AboutUs = () => {
                             'w-fit rounded-xl bg-white shadow-xl',
                             'absolute -right-12 bottom-20'
                         )}>
-                        <Icon type={Icons.TRAINER} className="h-16 w-16 fill-orange-400" />
+                        <Icon type="TRAINER" className="h-16 w-16 fill-orange-400" />
                         <p className="text-lg font-bold">
                             Professional <br /> Trainers
                         </p>
