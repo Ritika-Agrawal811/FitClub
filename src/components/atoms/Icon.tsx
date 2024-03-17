@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaArrowLeft } from 'react-icons/fa6'
+import { FaArrowLeft, FaArrowRight } from 'react-icons/fa6'
 
 type IconProps = {
     type: keyof typeof Icons
@@ -15,6 +15,7 @@ export const Icons = {
     TICK: 'TICK',
     QUOTES: 'QUOTES',
     ARROW_LEFT: 'ARROW_LEFT',
+    ARROW_RIGHT: 'ARROW_RIGHT',
 } as const
 
 const Icon: React.FC<IconProps> = ({ type, className }) => {
@@ -130,6 +131,9 @@ const Icon: React.FC<IconProps> = ({ type, className }) => {
 
         case Icons.ARROW_LEFT:
             return <FaArrowLeft className={className} />
+
+        case Icons.ARROW_RIGHT:
+            return <FaArrowRight className={className} />
     }
 }
 

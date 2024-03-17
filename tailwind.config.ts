@@ -12,6 +12,10 @@ const config: Config = {
             width: {
                 '85': '85%',
                 '90': '90%',
+                vmax: 'calc(100vmax * 1.5)',
+            },
+            height: {
+                vmax: 'calc(100vmax * 1.5)',
             },
             colors: {
                 orange: {
@@ -32,6 +36,9 @@ const config: Config = {
             },
             fontFamily: {
                 arial: 'Arial, Helvetica, sans-serif',
+            },
+            fontSize: {
+                '10xl': '10rem',
             },
         },
     },

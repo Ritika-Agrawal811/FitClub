@@ -3,7 +3,7 @@ import clsx from 'clsx'
 // components
 import Wrapper from '@/components/atoms/Wrapper'
 import Image from 'next/image'
-import Icon from '@/components/atoms/Icon'
+import NavigateButton from '../atoms/NavigateButton'
 
 const FitnessClass = () => {
     return (
@@ -23,20 +23,6 @@ const FitnessClass = () => {
                 </ul>
 
                 <section className={clsx('mt-14', 'grid grid-cols-6 gap-10')}>
-                    <div className={clsx('rounded-3xl bg-gray-900', 'flex flex-col items-center justify-center gap-6')}>
-                        <div
-                            className={clsx(
-                                'h-20 w-20',
-                                '-mt-8 rounded-full border-2 border-orange-400',
-                                'flex flex-col items-center justify-center'
-                            )}>
-                            <Icon type="ARROW_LEFT" className="text-3xl text-orange-400" />
-                            <span className="uppercase text-orange-400">Next</span>
-                        </div>
-
-                        <h3 className="text-2xl font-medium uppercase text-white">Bodycombat</h3>
-                    </div>
-
                     <figure className="col-span-3">
                         <Image
                             src="/person-lifting-weights.png"
@@ -64,6 +50,10 @@ const FitnessClass = () => {
                                 className="h-16 w-16 rounded-full"
                             />
                         </div>
+                    </div>
+                    <div className={clsx('rounded-3xl bg-gray-900', 'flex flex-col items-center justify-center gap-6')}>
+                        <NavigateButton variant="outline" className="-mt-8 " type="next" />
+                        <h3 className="text-2xl font-medium uppercase text-white">Bodycombat</h3>
                     </div>
                 </section>
             </Wrapper>

@@ -1,13 +1,11 @@
 import clsx from 'clsx'
 
-type Plan = {
-    name: string
-    points: string[]
-    category: string
-}
-
 type PlanCardProps = {
-    plan: Plan
+    plan: {
+        name: string
+        points: string[]
+        category: string
+    }
 }
 
 const PlanCard: React.FC<PlanCardProps> = ({ plan }) => {

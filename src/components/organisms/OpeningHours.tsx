@@ -1,9 +1,10 @@
 import clsx from 'clsx'
 
+// components
 import Image from 'next/image'
-import Wrapper from '../atoms/Wrapper'
-import StrokeText from '../atoms/StrokeText'
-import Icon from '../atoms/Icon'
+import Wrapper from '@/components/atoms/Wrapper'
+import StrokeText from '@/components/atoms/StrokeText'
+import Icon from '@/components/atoms/Icon'
 
 const OpeningHours = () => {
     return (
