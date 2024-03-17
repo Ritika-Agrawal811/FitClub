@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import clsx from 'clsx'
+import { Direction } from '@/types/common'
 
 // components
 import Wrapper from '@/components/atoms/Wrapper'
@@ -9,12 +10,8 @@ import NavigateButton from '../atoms/NavigateButton'
 const Testimonials = () => {
     const [rotation, setRotation] = useState(0)
 
-    const rotateTestimonialsHandler = (direction: 'prev' | 'next') => {
-        if (direction === 'next') {
-            setRotation((prev) => prev - 24)
-        } else {
-            setRotation((prev) => prev + 24)
-        }
+    const rotateTestimonialsHandler = (direction: Direction) => {
+        setRotation((prev) => (direction === 'next' ? prev - 24 : prev + 24))
     }
 
     return (
@@ -46,8 +43,14 @@ const Testimonials = () => {
                     </div>
 
                     <div className={clsx('absolute left-1/2 top-[60%] -translate-x-1/2', 'flex gap-8')}>
-                        <NavigateButton variant="fill" type="prev" onClick={() => rotateTestimonialsHandler('prev')} />
-                        <NavigateButton variant="fill" type="next" onClick={() => rotateTestimonialsHandler('next')} />
+                        {['prev', 'next'].map((direction, index) => (
+                            <NavigateButton
+                                key={index}
+                                variant="fill"
+                                type={direction as Direction}
+                                onClick={() => rotateTestimonialsHandler(direction as Direction)}
+                            />
+                        ))}
                     </div>
                 </div>
             </Wrapper>
