@@ -1,9 +1,25 @@
 import clsx from 'clsx'
+import { motion } from 'framer-motion'
 
 // components
 import Image from 'next/image'
 import Link from 'next/link'
-import Button from '../atoms/Button'
+import Button from '@/components/atoms/Button'
+
+const linkVariant = {
+    rest: {
+        y: 0,
+        transition: {
+            duration: 0.35,
+        },
+    },
+    hover: {
+        y: '-100%',
+        transition: {
+            duration: 0.35,
+        },
+    },
+}
 
 const Navbar = () => {
     return (
@@ -16,15 +32,23 @@ const Navbar = () => {
                     {navLinks.map((link) => {
                         const { label, url } = link
                         return (
-                            <li
+                            <motion.li
                                 key={label}
-                                className={clsx(
-                                    'text-lg',
-                                    'text-white',
-                                    'transition-colors duration-100 hover:text-orange-400'
-                                )}>
-                                <Link href={url}>{label}</Link>
-                            </li>
+                                initial="rest"
+                                animate="rest"
+                                whileHover="hover"
+                                className={clsx('text-lg font-medium text-white', 'overflow-hidden')}>
+                                <Link href={url}>
+                                    <motion.span
+                                        variants={linkVariant}
+                                        data-content={label}
+                                        className={clsx(
+                                            'relative block before:absolute before:-bottom-7 before:text-orange-400 before:content-[attr(data-content)]'
+                                        )}>
+                                        {label}
+                                    </motion.span>
+                                </Link>
+                            </motion.li>
                         )
                     })}
                 </ul>
