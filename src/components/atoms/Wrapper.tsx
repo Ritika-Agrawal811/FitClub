@@ -1,13 +1,18 @@
 import clsx from 'clsx'
 
 type WrapperProps = {
+    id?: string
     className?: string
     children: React.ReactNode
     variant: 'main' | 'section'
 }
 
-const Wrapper: React.FC<WrapperProps> = ({ children, className, variant }) => {
-    return <section className={clsx(wrapperVariants[variant], className)}>{children}</section>
+const Wrapper: React.FC<WrapperProps> = ({ children, id, className, variant }) => {
+    return (
+        <section id={id} className={clsx(wrapperVariants[variant], className)}>
+            {children}
+        </section>
+    )
 }
 
 export default Wrapper

@@ -8,7 +8,7 @@ import Icon from '@/components/atoms/Icon'
 
 const AboutUs = () => {
     return (
-        <Wrapper variant="main" className="bg-gray-900">
+        <Wrapper variant="main" className="bg-gray-900" id="about-us">
             <Wrapper variant="section" className={clsx('grid grid-cols-2 gap-20', 'my-0')}>
                 <div className="relative">
                     <Image

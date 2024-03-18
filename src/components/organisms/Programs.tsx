@@ -8,7 +8,7 @@ import ProgramCard from '@/components/molecules/ProgramCard'
 
 const Programs = () => {
     return (
-        <Wrapper variant="main" className={clsx('h-[475px]', 'bg-texture bg-primary')}>
+        <Wrapper variant="main" className={clsx('h-[475px]', 'bg-texture bg-primary')} id="programs">
             <h2 className={clsx('text-6xl', 'text-center font-bold uppercase text-white')}>
                 Explore Our <StrokeText title="Programs" />
             </h2>

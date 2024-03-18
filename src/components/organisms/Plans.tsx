@@ -7,7 +7,7 @@ import PlanCard from '../molecules/PlanCard'
 
 const Plans = () => {
     return (
-        <Wrapper variant="main">
+        <Wrapper variant="main" id="plans">
             <div className={clsx('bg-texture bg-primary', 'py-1 pt-16', 'mx-auto w-90 rounded-3xl')}>
                 <h2 className={clsx('text-6xl', 'text-center font-bold uppercase text-white')}>
                     Choose Your <StrokeText title="Best plan" />

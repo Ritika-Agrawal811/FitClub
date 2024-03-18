@@ -14,15 +14,16 @@ const Navbar = () => {
             <div className="flex items-center gap-8">
                 <ul className="flex gap-8">
                     {navLinks.map((link) => {
+                        const { label, url } = link
                         return (
                             <li
-                                key={link}
+                                key={label}
                                 className={clsx(
                                     'text-lg',
                                     'text-white',
                                     'transition-colors duration-100 hover:text-orange-400'
                                 )}>
-                                <Link href="">{link}</Link>
+                                <Link href={url}>{label}</Link>
                             </li>
                         )
                     })}
@@ -35,4 +36,21 @@ const Navbar = () => {
 
 export default Navbar
 
-const navLinks = ['Home', 'About Us', 'Programs', 'Plans', 'Testimonials']
+const navLinks = [
+    {
+        label: 'About Us',
+        url: '#about-us',
+    },
+    {
+        label: 'Programs',
+        url: '#programs',
+    },
+    {
+        label: 'Plans',
+        url: '#plans',
+    },
+    {
+        label: 'Testimonials',
+        url: '#testimonials',
+    },
+]

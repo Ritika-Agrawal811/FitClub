@@ -15,7 +15,7 @@ const Testimonials = () => {
     }
 
     return (
-        <Wrapper variant="main" className="pt-0">
+        <Wrapper variant="main" className="pt-0" id="testimonials">
             <Wrapper variant="section" className="w-full">
                 <h2 className={clsx('text-6xl', 'text-center font-bold uppercase text-gray-900')}>
                     What <span className="text-6xl text-orange-400">our clients</span> say
