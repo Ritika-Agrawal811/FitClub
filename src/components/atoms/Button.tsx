@@ -13,8 +13,11 @@ const Button = ({ variant, label, className, onClick, size = 'normal' }: ButtonP
     return (
         <button
             className={clsx(
-                'cursor-pointer capitalize',
-                'text-lg font-medium text-white',
+                'relative cursor-pointer',
+                'text-lg font-medium capitalize text-white',
+                'z-10 overflow-hidden transition duration-300',
+                'before:absolute before:left-1/2 before:top-1/2 before:-z-10 before:-translate-x-1/2 before:-translate-y-1/2 before:rounded-full before:duration-500',
+                'before:h-0 before:w-0 hover:before:h-[120%] hover:before:w-[120%]',
                 buttonStyles.size[size],
                 buttonStyles.variant[variant],
                 className
@@ -34,7 +37,7 @@ const buttonStyles = {
         big: 'px-10 py-3.5',
     },
     variant: {
-        fill: 'bg-orange-600',
-        outline: 'border-2 border-orange-400',
+        fill: 'bg-orange-600 border-2 border-orange-600 hover:text-orange-600 before:bg-white',
+        outline: 'border-2 border-orange-400 before:bg-orange-400',
     },
 }
