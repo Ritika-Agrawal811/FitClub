@@ -40,6 +40,9 @@ const config: Config = {
             fontSize: {
                 '10xl': '10rem',
             },
+            rotate: {
+                '20': '20deg',
+            },
         },
     },
     plugins: [
