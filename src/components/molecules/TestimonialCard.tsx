@@ -5,18 +5,13 @@ import Icon from '@/components/atoms/Icon'
 import Image from 'next/image'
 
 type TestimonialCardProps = {
-    flip?: boolean
-    testimonial: {
-        name: string
-        age: number
-        review: string
-        image: string
-    }
+    name: string
+    age: number
+    review: string
+    image: string
 }
 
-const TestimonialCard = ({ testimonial, flip = false }: TestimonialCardProps) => {
-    const { name, age, review, image } = testimonial
-
+const TestimonialCard: React.FC<TestimonialCardProps> = ({ name, age, review, image }) => {
     return (
         <article
             className={clsx(
@@ -24,7 +19,7 @@ const TestimonialCard = ({ testimonial, flip = false }: TestimonialCardProps) =>
                 'h-[310px] w-[300px]',
                 'rounded-3xl p-6',
                 'flex flex-col justify-between',
-                flip && '-scale-x-100 -scale-y-100'
+                'border-b border-gray-200 shadow-soft'
             )}>
             <p className={clsx('relative', 'text-lg font-bold text-gray-900')}>
                 {review}

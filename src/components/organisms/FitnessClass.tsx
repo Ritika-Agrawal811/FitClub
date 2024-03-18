@@ -3,7 +3,7 @@ import clsx from 'clsx'
 // components
 import Wrapper from '@/components/atoms/Wrapper'
 import Image from 'next/image'
-import NavigateButton from '../atoms/NavigateButton'
+import NavigateButton from '@/components/atoms/NavigateButton'
 
 const FitnessClass = () => {
     return (
@@ -42,13 +42,13 @@ const FitnessClass = () => {
                                 exercises which is a secret to developing atheltic muscles
                             </p>
 
-                            <Image
+                            {/* <Image
                                 src="/t-image1.png"
                                 alt=""
                                 width={500}
                                 height={300}
                                 className="h-16 w-16 rounded-full"
-                            />
+                            /> */}
                         </div>
                     </div>
                     <div className={clsx('rounded-3xl bg-gray-900', 'flex flex-col items-center justify-center gap-6')}>

@@ -16,8 +16,11 @@ const NavigateButton = ({ variant, className, type, onClick }: NavigateButtonPro
         <div
             className={clsx(
                 'h-20 w-20',
-                'rounded-full font-bold',
+                'cursor-pointer rounded-full font-bold',
                 'flex flex-col items-center justify-center',
+                'relative z-10 overflow-hidden transition duration-300',
+                'before:absolute before:left-1/2 before:top-1/2 before:-z-10 before:-translate-x-1/2 before:-translate-y-1/2 before:rounded-full before:duration-500',
+                'before:h-0 before:w-0 hover:before:h-[120%] hover:before:w-[120%]',
                 className,
                 navigateButtonVariants[variant]
             )}
@@ -31,6 +34,6 @@ const NavigateButton = ({ variant, className, type, onClick }: NavigateButtonPro
 export default NavigateButton
 
 const navigateButtonVariants = {
-    fill: 'bg-gray-900 text-white',
-    outline: 'border-4 border-orange-400 text-orange-400',
+    fill: 'bg-gray-900 border-2 border-gray-900 text-white hover:text-gray-900 before:bg-white',
+    outline: 'border-4 border-orange-400 text-orange-400 hover:border-white hover:text-white before:bg-orange-400',
 }

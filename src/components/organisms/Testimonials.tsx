@@ -36,7 +36,7 @@ const Testimonials = () => {
                                     key={index}
                                     className={clsx('absolute h-full py-2', 'flex flex-col justify-between')}
                                     style={{ transform: `rotate(${24 * (index + 1)}deg)` }}>
-                                    <TestimonialCard testimonial={testimonial} />
+                                    <TestimonialCard {...testimonial} />
                                 </div>
                             )
                         })}

@@ -43,6 +43,9 @@ const config: Config = {
             rotate: {
                 '20': '20deg',
             },
+            boxShadow: {
+                soft: 'rgba(149, 157, 165, 0.2) 0 0.5em 1.5em',
+            },
         },
     },
     plugins: [
