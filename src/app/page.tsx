@@ -12,14 +12,14 @@ import Testimonials from '@/components/organisms/Testimonials'
 export default function Home() {
     return (
         <main>
-            <HeroSection />
+            {/* <HeroSection /> */}
             <AboutUs />
-            <Programs />
-            <WhyUs />
-            <FitnessClass />
-            <OpeningHours />
-            <Plans />
-            <Testimonials />
+            {/* <Programs /> */}
+            {/* <WhyUs /> */}
+            {/* <FitnessClass /> */}
+            {/* <OpeningHours /> */}
+            {/* <Plans /> */}
+            {/* <Testimonials /> */}
         </main>
     )
 }

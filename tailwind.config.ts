@@ -46,6 +46,10 @@ const config: Config = {
             boxShadow: {
                 soft: 'rgba(149, 157, 165, 0.2) 0 0.5em 1.5em',
             },
+            screens: {
+                '3xl': '1680px',
+                '4xl': '2560px',
+            },
         },
     },
     plugins: [

@@ -18,6 +18,6 @@ const Wrapper: React.FC<WrapperProps> = ({ children, id, className, variant }) =
 export default Wrapper
 
 const wrapperVariants = {
-    main: 'py-28',
-    section: 'my-20 w-90 mx-auto',
+    main: 'py-10 lg:py-28',
+    section: 'my-10 lg:my-20 w-90 3xl:w-85 4xl:w-3/4 mx-auto',
 }

@@ -14,7 +14,8 @@ const Button = ({ variant, label, className, onClick, size = 'normal' }: ButtonP
         <button
             className={clsx(
                 'relative cursor-pointer',
-                'text-lg font-medium capitalize text-white',
+                'lg:text-lg',
+                'font-medium capitalize text-white',
                 'z-10 overflow-hidden transition duration-300',
                 'before:absolute before:left-1/2 before:top-1/2 before:-z-10 before:-translate-x-1/2 before:-translate-y-1/2 before:rounded-full before:duration-500',
                 'before:h-0 before:w-0 hover:before:h-[120%] hover:before:w-[120%]',
