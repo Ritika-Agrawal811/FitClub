@@ -8,10 +8,13 @@ import ProgramCard from '@/components/molecules/ProgramCard'
 
 const Programs = () => {
     return (
-        <Wrapper
-            variant="main"
-            className={clsx('h-[18em] xs:h-[16em] sm:h-[18em] lg:h-[26em] 2xl:h-[30em]', 'bg-texture bg-primary')}
-            id="programs">
+        <Wrapper variant="main" className="relative" id="programs">
+            <div
+                className={clsx(
+                    'absolute left-0 top-0 -z-10 w-full',
+                    'h-[18em] xs:h-[16em] sm:h-[18em] lg:h-[24em] 2xl:h-[30em]',
+                    'bg-texture bg-primary'
+                )}></div>
             <h2
                 className={clsx(
                     'text-3xl sm:text-4xl lg:text-5xl 2xl:text-6xl 3xl:text-7xl',

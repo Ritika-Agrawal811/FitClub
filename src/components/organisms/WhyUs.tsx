@@ -1,28 +1,45 @@
 import clsx from 'clsx'
-import { Icons } from '@/components/atoms/Icon'
+import { IconsList, Position } from '@/types/common'
 
 // components
 import Wrapper from '@/components/atoms/Wrapper'
 import Button from '@/components/atoms/Button'
 import Image from 'next/image'
 import Icon from '@/components/atoms/Icon'
+import Tag from '@/components/atoms/Tag'
 
 const WhyUs = () => {
     return (
-        <Wrapper variant="main" className="mt-40">
-            <Wrapper variant="section" className={clsx('grid grid-cols-2 gap-20')}>
+        <Wrapper variant="main">
+            <Wrapper variant="section" className={clsx('grid gap-10 lg:grid-cols-2 xl:gap-20')}>
                 <div>
-                    <h2 className={clsx('text-5xl', 'font-bold uppercase leading-tight text-gray-900')}>
+                    <h2
+                        className={clsx(
+                            'text-2xl sm:text-3xl lg:text-4xl 2xl:text-5xl 3xl:text-6xl',
+                            'font-bold uppercase text-gray-900'
+                        )}>
                         Why choose <span className="text-orange-400">Us?</span>
                     </h2>
                     {reasons.map((reason, index) => {
                         const { heading, description } = reason
                         return (
-                            <div key={index} className="mt-6">
-                                <h3 className="flex gap-4 text-2xl font-medium">
-                                    <Icon type={Icons.TICK} className="h-8 w-8 fill-orange-400" /> {heading}
+                            <div key={index} className="mt-6 3xl:mt-8">
+                                <h3
+                                    className={clsx(
+                                        'flex gap-4',
+                                        'text-lg sm:text-xl md:text-2xl 3xl:text-3xl',
+                                        'font-medium'
+                                    )}>
+                                    <Icon type="TICK" className="h-8 w-8 fill-orange-400" /> {heading}
                                 </h3>
-                                <p className="mt-2 w-90 text-gray-600">{description}</p>
+                                <p
+                                    className={clsx(
+                                        'text-gray-600 2xl:w-90',
+                                        'mt-2 3xl:mt-4',
+                                        'text-sm md:text-base 3xl:text-lg 4xl:text-xl'
+                                    )}>
+                                    {description}
+                                </p>
                             </div>
                         )
                     })}
@@ -37,31 +54,15 @@ const WhyUs = () => {
                         className="h-full w-full object-cover"
                     />
 
-                    <div
-                        className={clsx(
-                            'flex items-center gap-6',
-                            'px-6 py-3',
-                            'w-fit rounded-xl bg-gray-900 shadow-xl',
-                            'absolute -left-24 bottom-14'
-                        )}>
-                        <Icon type={Icons.HEARTBEAT} className="h-16 w-16 fill-orange-400" />
-                        <p className="text-2xl font-bold text-white">
-                            70 bpm <br /> <span className="text-lg font-medium">Heart Rate</span>
-                        </p>
-                    </div>
-
-                    <div
-                        className={clsx(
-                            'flex items-center gap-4',
-                            'px-6 py-3',
-                            'w-fit rounded-xl bg-gray-900 shadow-xl',
-                            'absolute -right-12 top-14'
-                        )}>
-                        <Icon type={Icons.FIRE} className="h-14 w-14 fill-orange-400" />
-                        <p className="text-2xl font-bold text-white">
-                            24% <br /> <span className="text-lg font-medium">Fat Burning</span>
-                        </p>
-                    </div>
+                    {tags.map((item, index) => {
+                        return (
+                            <Tag
+                                key={index}
+                                {...item}
+                                className="bg-gray-900 text-sm text-white xs:text-lg 2xl:text-2xl"
+                            />
+                        )
+                    })}
                 </div>
             </Wrapper>
         </Wrapper>
@@ -84,5 +85,18 @@ const reasons = [
         heading: 'Flexible Time',
         description:
             'There are many fitness classes that are offered during off-peak hours, such as early morning or late evening',
+    },
+]
+
+const tags = [
+    {
+        label: ['70 bpm', 'Heart Rate'],
+        icon: 'HEARTBEAT' as IconsList,
+        position: 'bottom-left' as Position,
+    },
+    {
+        label: ['24%', 'Fat Burning'],
+        icon: 'FIRE' as IconsList,
+        position: 'top-right' as Position,
     },
 ]

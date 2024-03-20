@@ -15,7 +15,7 @@ export default function Home() {
             {/* <HeroSection /> */}
             <AboutUs />
             <Programs />
-            {/* <WhyUs /> */}
+            <WhyUs />
             {/* <FitnessClass /> */}
             {/* <OpeningHours /> */}
             {/* <Plans /> */}
