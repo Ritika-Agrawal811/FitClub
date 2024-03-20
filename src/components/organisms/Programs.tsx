@@ -8,12 +8,21 @@ import ProgramCard from '@/components/molecules/ProgramCard'
 
 const Programs = () => {
     return (
-        <Wrapper variant="main" className={clsx('h-[475px]', 'bg-texture bg-primary')} id="programs">
-            <h2 className={clsx('text-6xl', 'text-center font-bold uppercase text-white')}>
+        <Wrapper
+            variant="main"
+            className={clsx('h-[18em] xs:h-[16em] sm:h-[18em] lg:h-[26em] 2xl:h-[30em]', 'bg-texture bg-primary')}
+            id="programs">
+            <h2
+                className={clsx(
+                    'text-3xl sm:text-4xl lg:text-5xl 2xl:text-6xl 3xl:text-7xl',
+                    'text-center font-bold uppercase text-white'
+                )}>
                 Explore Our <StrokeText title="Programs" />
             </h2>
 
-            <Wrapper variant="section" className="grid grid-cols-4 gap-8">
+            <Wrapper
+                variant="section"
+                className={clsx('grid md:grid-cols-2 2xl:grid-cols-4', 'gap-x-12 gap-y-32 2xl:gap-8')}>
                 {programs.map((program, index) => {
                     return <ProgramCard key={index} index={index} {...program} />
                 })}

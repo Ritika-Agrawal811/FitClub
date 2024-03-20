@@ -61,6 +61,9 @@ const config: Config = {
                     '-webkit-text-stroke': '1px',
                     '-webkit-text-stroke-color': '#fff',
                 },
+                '.clip-right-triangle': {
+                    'clip-path': 'polygon(100% 0, 0% 100%, 100% 100%)',
+                },
             })
         }),
     ],
