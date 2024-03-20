@@ -19,5 +19,5 @@ export default Wrapper
 
 const wrapperVariants = {
     main: 'py-10 lg:py-28',
-    section: 'my-10 lg:my-20 w-90 3xl:w-85 4xl:w-3/4 mx-auto',
+    section: 'my-10 lg:my-20 w-90 3xl:w-85 4xl:w-3/4 5xl:w-3/5 mx-auto',
 }

@@ -9,7 +9,7 @@ import Icon from '@/components/atoms/Icon'
 const AboutUs = () => {
     return (
         <Wrapper variant="main" className="bg-gray-900" id="about-us">
-            <Wrapper variant="section" className={clsx('grid gap-10 lg:grid-cols-2 lg:gap-20', 'my-0')}>
+            <Wrapper variant="section" className={clsx('grid gap-10 lg:grid-cols-2 xl:gap-20', 'my-0')}>
                 <div className="relative">
                     <Image
                         src="/person-lifting-weights.png"
@@ -19,18 +19,24 @@ const AboutUs = () => {
                         className="h-full w-full object-cover"
                     />
 
-                    {/* <div
+                    <div
                         className={clsx(
-                            'flex items-center gap-6',
-                            'px-6 py-3',
+                            'flex items-center gap-2 xs:gap-4 lg:gap-6',
+                            'px-4 py-3 2xl:px-6',
                             'w-fit rounded-xl bg-white shadow-xl',
-                            'absolute -right-12 bottom-20'
+                            'absolute -bottom-4 right-4 xs:bottom-4 lg:-bottom-10 lg:right-8 2xl:-right-12 2xl:bottom-20'
                         )}>
-                        <Icon type="TRAINER" className="h-16 w-16 fill-orange-400" />
-                        <p className="text-lg font-bold">
+                        <Icon
+                            type="TRAINER"
+                            className={clsx(
+                                'h-10 w-10 xs:h-12 xs:w-12 lg:h-14 lg:w-14 2xl:h-16 2xl:w-16',
+                                'fill-orange-400'
+                            )}
+                        />
+                        <p className="text-sm font-bold xs:text-base 2xl:text-lg">
                             Professional <br /> Trainers
                         </p>
-                    </div> */}
+                    </div>
                 </div>
                 <div>
                     <h2
