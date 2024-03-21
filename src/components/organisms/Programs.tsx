@@ -25,7 +25,7 @@ const Programs = () => {
 
             <Wrapper
                 variant="section"
-                className={clsx('grid md:grid-cols-2 2xl:grid-cols-4', 'gap-x-12 gap-y-32 2xl:gap-8')}>
+                className={clsx('grid sm:grid-cols-2 2xl:grid-cols-4', 'gap-x-12 gap-y-32 2xl:gap-8')}>
                 {programs.map((program, index) => {
                     return <ProgramCard key={index} index={index} {...program} />
                 })}
