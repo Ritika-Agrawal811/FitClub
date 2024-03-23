@@ -43,7 +43,7 @@ const WhyUs = () => {
                             </div>
                         )
                     })}
-                    <Button label="Join Today" variant="fill" className="mt-10" />
+                    <Button label="Join Today" className="mt-10" />
                 </div>
                 <div className="relative">
                     <Image

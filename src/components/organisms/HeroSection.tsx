@@ -47,8 +47,7 @@ const HeroSection = () => {
 
                     {/* Call to action buttons */}
                     <div className="my-auto flex gap-6 self-start">
-                        <Button label="Get Started" variant="fill" />
-                        <Button label="Learn More" variant="outline" />
+                        <Button label="Find the nearest gym" />
                     </div>
                 </section>
 

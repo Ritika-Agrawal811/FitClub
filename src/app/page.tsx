@@ -12,7 +12,7 @@ import Testimonials from '@/components/organisms/Testimonials'
 export default function Home() {
     return (
         <main>
-            {/* <HeroSection /> */}
+            <HeroSection />
             <AboutUs />
             <Programs />
             <WhyUs />

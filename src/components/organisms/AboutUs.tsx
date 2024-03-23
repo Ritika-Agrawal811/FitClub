@@ -45,7 +45,7 @@ const AboutUs = () => {
                         We believe that everyone should have access to the benefits of exercise and a healthy body and
                         life. Get to know us better and discover how we can help you unlock your full potential.{' '}
                     </p>
-                    <Button label="Request Free Trial" variant="fill" className="mt-10 4xl:mt-12" />
+                    <Button label="Request Free Trial" className="mt-10 4xl:mt-12" />
                 </div>
             </Wrapper>
         </Wrapper>

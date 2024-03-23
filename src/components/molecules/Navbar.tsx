@@ -52,7 +52,7 @@ const Navbar = () => {
                         )
                     })}
                 </ul>
-                <Button label="join now" variant="fill" size="small" />
+                <Button label="join now" size="small" />
             </div>
         </nav>
     )
