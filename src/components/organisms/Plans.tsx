@@ -12,12 +12,16 @@ const Plans = () => {
     const [activePlan, setActivePlan] = useState<ActivePlan>('basic')
     return (
         <Wrapper variant="main" id="plans">
-            <div className={clsx('bg-texture bg-primary', 'py-1 pt-16', 'mx-auto w-90 rounded-3xl')}>
-                <h2 className={clsx('text-6xl', 'text-center font-bold uppercase text-white')}>
+            <Wrapper variant="section" className={clsx('bg-texture bg-primary', 'py-1 pt-16', 'rounded-3xl')}>
+                <h2
+                    className={clsx(
+                        'text-3xl sm:text-4xl lg:text-5xl 2xl:text-6xl 3xl:text-7xl',
+                        'text-center font-bold uppercase text-white'
+                    )}>
                     Choose Your <StrokeText title="Best plan" />
                 </h2>
 
-                <Wrapper variant="section" className="rounded-3xl bg-primary p-6">
+                <div className={clsx('rounded-3xl bg-primary', 'p-2 sm:p-4 lg:p-6', 'mx-auto w-90', 'my-10 lg:my-16')}>
                     {plans.map((plan, index) => {
                         return (
                             <PlanCard
@@ -28,8 +32,8 @@ const Plans = () => {
                             />
                         )
                     })}
-                </Wrapper>
-            </div>
+                </div>
+            </Wrapper>
         </Wrapper>
     )
 }
