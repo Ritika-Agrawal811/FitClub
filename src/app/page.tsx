@@ -16,7 +16,7 @@ export default function Home() {
             <AboutUs />
             <Programs />
             <WhyUs />
-            {/* <FitnessClass /> */}
+            <FitnessClass />
             <OpeningHours />
             <Plans />
             {/* <Testimonials /> */}

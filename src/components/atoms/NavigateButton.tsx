@@ -15,7 +15,7 @@ const NavigateButton = ({ variant, className, type, onClick }: NavigateButtonPro
     return (
         <div
             className={clsx(
-                'h-20 w-20',
+                'h-16 w-16 lg:h-20 lg:w-20 3xl:h-24 3xl:w-24',
                 'cursor-pointer rounded-full font-bold',
                 'flex flex-col items-center justify-center',
                 'relative z-10 overflow-hidden transition duration-300',
@@ -25,8 +25,8 @@ const NavigateButton = ({ variant, className, type, onClick }: NavigateButtonPro
                 navigateButtonVariants[variant]
             )}
             onClick={onClick}>
-            <Icon type={type === 'prev' ? 'ARROW_LEFT' : 'ARROW_RIGHT'} className="text-3xl" />
-            <span className="uppercase">{type}</span>
+            <Icon type={type === 'prev' ? 'ARROW_LEFT' : 'ARROW_RIGHT'} className="text-2xl lg:text-3xl" />
+            <span className="text-sm uppercase lg:text-base 3xl:text-lg">{type}</span>
         </div>
     )
 }
@@ -35,5 +35,6 @@ export default NavigateButton
 
 const navigateButtonVariants = {
     fill: 'bg-gray-900 border-2 border-gray-900 text-white hover:text-gray-900 before:bg-white',
-    outline: 'border-4 border-orange-400 text-orange-400 hover:border-white hover:text-white before:bg-orange-400',
+    outline:
+        'border-2 xl:border-4 border-orange-400 text-orange-400 hover:border-white hover:text-white before:bg-orange-400',
 }
