@@ -17,7 +17,7 @@ export default function Home() {
             <Programs />
             <WhyUs />
             {/* <FitnessClass /> */}
-            {/* <OpeningHours /> */}
+            <OpeningHours />
             <Plans />
             {/* <Testimonials /> */}
         </main>
