@@ -71,6 +71,25 @@ const WhyUs = () => {
 
 export default WhyUs
 
+type Tags = {
+    label: string[]
+    icon: IconsList
+    position: Position
+}
+
+const tags: Tags[] = [
+    {
+        label: ['70 bpm', 'Heart Rate'],
+        icon: 'HEARTBEAT',
+        position: 'bottom-left',
+    },
+    {
+        label: ['24%', 'Fat Burning'],
+        icon: 'FIRE',
+        position: 'top-right',
+    },
+]
+
 const reasons = [
     {
         heading: 'Personal Training',
@@ -85,18 +104,5 @@ const reasons = [
         heading: 'Flexible Time',
         description:
             'There are many fitness classes that are offered during off-peak hours, such as early morning or late evening',
-    },
-]
-
-const tags = [
-    {
-        label: ['70 bpm', 'Heart Rate'],
-        icon: 'HEARTBEAT' as IconsList,
-        position: 'bottom-left' as Position,
-    },
-    {
-        label: ['24%', 'Fat Burning'],
-        icon: 'FIRE' as IconsList,
-        position: 'top-right' as Position,
     },
 ]

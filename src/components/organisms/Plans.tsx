@@ -6,8 +6,6 @@ import Wrapper from '@/components/atoms/Wrapper'
 import StrokeText from '../atoms/StrokeText'
 import PlanCard from '../molecules/PlanCard'
 
-type ActivePlan = 'basic' | 'professional' | 'advanced'
-
 const Plans = () => {
     const [activePlan, setActivePlan] = useState<ActivePlan>('basic')
     return (
@@ -28,7 +26,7 @@ const Plans = () => {
                                 key={index}
                                 isActive={plan.category === activePlan}
                                 {...plan}
-                                onClick={() => setActivePlan(plan.category as ActivePlan)}
+                                onClick={() => setActivePlan(plan.category)}
                             />
                         )
                     })}
@@ -40,7 +38,16 @@ const Plans = () => {
 
 export default Plans
 
-const plans = [
+type ActivePlan = 'basic' | 'professional' | 'advanced'
+
+type Plans = {
+    name: string
+    points: string[]
+    category: ActivePlan
+    price: number
+}
+
+const plans: Plans[] = [
     {
         name: 'starter fitness program',
         points: ['2 Days in a week', '01 sweatshirt', '01 bottle of protein'],
