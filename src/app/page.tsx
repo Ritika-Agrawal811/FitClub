@@ -19,7 +19,7 @@ export default function Home() {
             <FitnessClass />
             <OpeningHours />
             <Plans />
-            {/* <Testimonials /> */}
+            <Testimonials />
         </main>
     )
 }

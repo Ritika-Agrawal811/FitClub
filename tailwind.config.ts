@@ -13,11 +13,9 @@ const config: Config = {
                 '18': '4.5rem',
                 '85': '85%',
                 '90': '90%',
-                vmax: 'calc(100vmax * 1.5)',
             },
             height: {
                 '18': '4.5rem',
-                vmax: 'calc(100vmax * 1.5)',
             },
             colors: {
                 orange: {

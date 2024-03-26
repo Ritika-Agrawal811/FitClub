@@ -15,16 +15,20 @@ const Testimonials = () => {
     }
 
     return (
-        <Wrapper variant="main" className="pt-0" id="testimonials">
-            <Wrapper variant="section" className="w-full">
-                <h2 className={clsx('text-6xl', 'text-center font-bold uppercase text-gray-900')}>
-                    What <span className="text-6xl text-orange-400">our clients</span> say
+        <Wrapper variant="main" id="testimonials">
+            <div>
+                <h2
+                    className={clsx(
+                        'text-3xl sm:text-4xl lg:text-5xl 2xl:text-6xl 3xl:text-7xl',
+                        'text-center font-bold uppercase text-gray-900'
+                    )}>
+                    What <span className="text-orange-400">our clients</span> say
                 </h2>
 
-                <div className="relative mt-16 h-[710px] overflow-hidden">
+                <div className={clsx('relative mt-16 overflow-hidden', 'h-[500px] xl:h-[600px] 2xl:h-[710px]')}>
                     <div
                         className={clsx(
-                            'h-vmax w-vmax rounded-full',
+                            'h-[140em] w-[140em] rounded-full',
                             'relative left-1/2',
                             'flex items-center justify-center',
                             'transition-transform duration-1000 ease-in-out'
@@ -42,7 +46,11 @@ const Testimonials = () => {
                         })}
                     </div>
 
-                    <div className={clsx('absolute left-1/2 top-[60%] -translate-x-1/2', 'flex gap-8')}>
+                    <div
+                        className={clsx(
+                            'absolute left-1/2 top-[80%] -translate-x-1/2 2xl:top-[60%] 3xl:top-3/4',
+                            'flex gap-8'
+                        )}>
                         {['prev', 'next'].map((direction, index) => (
                             <NavigateButton
                                 key={index}
@@ -53,8 +61,8 @@ const Testimonials = () => {
                         ))}
                     </div>
                 </div>
-            </Wrapper>
-            <Wrapper variant="section">
+            </div>
+            {/* <Wrapper variant="section">
                 <h2
                     className={clsx(
                         'text-10xl',
@@ -63,7 +71,7 @@ const Testimonials = () => {
                     )}>
                     100,000 <span className="text-6xl text-orange-400">Happy members</span>
                 </h2>
-            </Wrapper>
+            </Wrapper> */}
         </Wrapper>
     )
 }

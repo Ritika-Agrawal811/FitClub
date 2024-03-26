@@ -16,7 +16,7 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({ name, age, review, im
         <article
             className={clsx(
                 'bg-texture',
-                'h-[310px] w-[300px]',
+                'h-[20em] w-[18em]',
                 'rounded-3xl p-6',
                 'flex flex-col justify-between',
                 'border-b border-gray-200 shadow-soft'
