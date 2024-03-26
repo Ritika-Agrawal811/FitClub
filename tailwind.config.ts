@@ -10,11 +10,13 @@ const config: Config = {
     theme: {
         extend: {
             width: {
+                '18': '4.5rem',
                 '85': '85%',
                 '90': '90%',
                 vmax: 'calc(100vmax * 1.5)',
             },
             height: {
+                '18': '4.5rem',
                 vmax: 'calc(100vmax * 1.5)',
             },
             colors: {
