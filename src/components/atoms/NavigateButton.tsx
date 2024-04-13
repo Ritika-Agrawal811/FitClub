@@ -13,7 +13,7 @@ type NavigateButtonProps = {
 
 const NavigateButton = ({ variant, className, type, onClick }: NavigateButtonProps) => {
     return (
-        <div
+        <button
             className={clsx(
                 'h-16 w-16 lg:h-20 lg:w-20 3xl:h-24 3xl:w-24',
                 'cursor-pointer rounded-full font-bold',
@@ -27,7 +27,7 @@ const NavigateButton = ({ variant, className, type, onClick }: NavigateButtonPro
             onClick={onClick}>
             <Icon type={type === 'prev' ? 'ARROW_LEFT' : 'ARROW_RIGHT'} className="text-2xl lg:text-3xl" />
             <span className="text-sm uppercase lg:text-base 3xl:text-lg">{type}</span>
-        </div>
+        </button>
     )
 }
 
