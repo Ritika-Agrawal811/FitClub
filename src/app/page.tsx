@@ -8,6 +8,7 @@ import FitnessClass from '@/components/organisms/FitnessClass'
 import OpeningHours from '@/components/organisms/OpeningHours'
 import Plans from '@/components/organisms/Plans'
 import Testimonials from '@/components/organisms/Testimonials'
+import HappyMembers from '@/components/organisms/HappyMembers'
 
 export default function Home() {
     return (
@@ -20,6 +21,7 @@ export default function Home() {
             <OpeningHours />
             <Plans />
             <Testimonials />
+            <HappyMembers />
         </main>
     )
 }

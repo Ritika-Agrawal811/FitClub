@@ -16,62 +16,50 @@ const Testimonials = () => {
 
     return (
         <Wrapper variant="main" id="testimonials">
-            <div>
-                <h2
+            <h2
+                className={clsx(
+                    'text-3xl sm:text-4xl lg:text-5xl 2xl:text-6xl 3xl:text-7xl',
+                    'text-center font-bold uppercase text-gray-900'
+                )}>
+                What <span className="text-orange-400">our clients</span> say
+            </h2>
+
+            <div className={clsx('relative mt-16 overflow-hidden', 'h-[32em] xl:h-[38em] 2xl:h-[44em]')}>
+                <div
                     className={clsx(
-                        'text-3xl sm:text-4xl lg:text-5xl 2xl:text-6xl 3xl:text-7xl',
-                        'text-center font-bold uppercase text-gray-900'
-                    )}>
-                    What <span className="text-orange-400">our clients</span> say
-                </h2>
-
-                <div className={clsx('relative mt-16 overflow-hidden', 'h-[500px] xl:h-[600px] 2xl:h-[710px]')}>
-                    <div
-                        className={clsx(
-                            'h-[140em] w-[140em] rounded-full',
-                            'relative left-1/2',
-                            'flex items-center justify-center',
-                            'transition-transform duration-1000 ease-in-out'
-                        )}
-                        style={{ transform: `translateX(-50%) rotate(${rotation}deg)` }}>
-                        {testimonials.map((testimonial, index) => {
-                            return (
-                                <div
-                                    key={index}
-                                    className={clsx('absolute h-full py-2', 'flex flex-col justify-between')}
-                                    style={{ transform: `rotate(${24 * (index + 1)}deg)` }}>
-                                    <TestimonialCard {...testimonial} />
-                                </div>
-                            )
-                        })}
-                    </div>
-
-                    <div
-                        className={clsx(
-                            'absolute left-1/2 top-[80%] -translate-x-1/2 2xl:top-[60%] 3xl:top-3/4',
-                            'flex gap-8'
-                        )}>
-                        {['prev', 'next'].map((direction, index) => (
-                            <NavigateButton
+                        'h-[140em] w-[140em] rounded-full',
+                        'relative left-1/2',
+                        'flex items-center justify-center',
+                        'transition-transform duration-1000 ease-in-out'
+                    )}
+                    style={{ transform: `translateX(-50%) rotate(${rotation}deg)` }}>
+                    {testimonials.map((testimonial, index) => {
+                        return (
+                            <div
                                 key={index}
-                                variant="fill"
-                                type={direction as Direction}
-                                onClick={() => rotateTestimonialsHandler(direction as Direction)}
-                            />
-                        ))}
-                    </div>
+                                className={clsx('absolute h-full py-2', 'flex flex-col justify-between')}
+                                style={{ transform: `rotate(${24 * (index + 1)}deg)` }}>
+                                <TestimonialCard {...testimonial} />
+                            </div>
+                        )
+                    })}
+                </div>
+
+                <div
+                    className={clsx(
+                        'absolute left-1/2 top-[80%] -translate-x-1/2 2xl:top-[60%] 3xl:top-3/4',
+                        'flex gap-8'
+                    )}>
+                    {['prev', 'next'].map((direction, index) => (
+                        <NavigateButton
+                            key={index}
+                            variant="fill"
+                            type={direction as Direction}
+                            onClick={() => rotateTestimonialsHandler(direction as Direction)}
+                        />
+                    ))}
                 </div>
             </div>
-            {/* <Wrapper variant="section">
-                <h2
-                    className={clsx(
-                        'text-10xl',
-                        'text-center font-bold uppercase tracking-wide text-gray-900',
-                        'flex flex-col'
-                    )}>
-                    100,000 <span className="text-6xl text-orange-400">Happy members</span>
-                </h2>
-            </Wrapper> */}
         </Wrapper>
     )
 }
