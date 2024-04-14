@@ -12,7 +12,7 @@ const Button = ({ label, className, onClick, size = 'normal' }: ButtonProps) => 
         <button
             className={clsx(
                 'relative z-10 cursor-pointer overflow-hidden',
-                'font-medium capitalize text-white lg:text-lg 4xl:text-xl',
+                'font-medium capitalize text-white xl:text-lg 4xl:text-xl',
                 'before:absolute before:left-1/2 before:top-1/2 before:-z-10 before:h-[120%] before:w-[120%] before:-translate-x-1/2 before:-translate-y-1/2 before:bg-orange-600 before:duration-300',
                 'hover:bg-transparent hover:before:rotate-180',
                 buttonStyles.size[size],

@@ -24,15 +24,17 @@ const linkVariant = {
 const Navbar = () => {
     return (
         <nav>
-            <div
-                className={clsx(
-                    'hidden items-center justify-between lg:flex',
-                    'mx-auto w-90 3xl:w-85 4xl:w-3/4 5xl:w-3/5'
-                )}>
+            <div className={clsx('flex items-center justify-between', 'mx-auto w-90 3xl:w-85 4xl:w-3/4 5xl:w-3/5')}>
                 <Link href="/">
-                    <Image src="/logo.png" alt="fitclub logo" width={332} height={88} className="aspect-auto w-48" />
+                    <Image
+                        src="/logo.png"
+                        alt="fitclub logo"
+                        width={332}
+                        height={88}
+                        className="aspect-auto w-40 xl:w-48"
+                    />
                 </Link>
-                <div className="flex items-center gap-8">
+                <div className="hidden items-center gap-8 lg:flex">
                     <ul className="flex gap-8">
                         {navLinks.map((link) => {
                             const { label, url } = link

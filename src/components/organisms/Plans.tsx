@@ -19,7 +19,7 @@ const Plans = () => {
                     Choose Your <StrokeText title="Best plan" />
                 </h2>
 
-                <div className={clsx('rounded-3xl bg-primary', 'p-2 sm:p-4 lg:p-6', 'mx-auto w-90', 'my-10 lg:my-16')}>
+                <div className={clsx('rounded-3xl bg-primary', 'p-2 sm:p-4 xl:p-6', 'mx-auto w-90', 'my-10 lg:my-16')}>
                     {plans.map((plan, index) => {
                         return (
                             <PlanCard

@@ -15,7 +15,7 @@ const HeroSection = () => {
                 className={clsx(
                     'grid lg:grid-cols-4',
                     'grow',
-                    'lg:mt-10 4xl:mt-16',
+                    '2xl:mt-10 4xl:mt-16',
                     'mx-auto w-90 3xl:w-85 4xl:w-3/4 5xl:w-3/5'
                 )}>
                 {/* left section */}
@@ -24,7 +24,7 @@ const HeroSection = () => {
                     <div
                         className={clsx(
                             'w-fit rounded-full bg-gray-900 uppercase text-white',
-                            'mt-20',
+                            'mt-16 2xl:mt-20',
                             'py-2 pl-3 pr-5'
                         )}>
                         <p className={clsx('flex items-center gap-2', 'text-xs sm:text-sm 2xl:text-base')}>

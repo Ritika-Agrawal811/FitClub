@@ -23,7 +23,7 @@ const WhyUs = () => {
                     {reasons.map((reason, index) => {
                         const { heading, description } = reason
                         return (
-                            <div key={index} className="mt-6 3xl:mt-8">
+                            <div key={index} className="mt-4 2xl:mt-6 3xl:mt-8">
                                 <h3
                                     className={clsx(
                                         'flex gap-4',
@@ -43,7 +43,7 @@ const WhyUs = () => {
                             </div>
                         )
                     })}
-                    <Button label="Join Today" className="mt-10" />
+                    <Button label="Join Today" className="mt-6 2xl:mt-10" />
                 </div>
                 <div className="relative">
                     <Image

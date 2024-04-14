@@ -17,7 +17,7 @@ const Tag: React.FC<TagProps> = ({ label, icon, position, className }) => {
         <div
             className={clsx(
                 'flex items-center gap-2 xs:gap-4 lg:gap-6',
-                'px-3 py-2 sm:px-4 sm:py-3 2xl:px-6',
+                'px-3 py-2 sm:px-4 sm:py-3 lg:py-2 2xl:px-6',
                 'absolute w-fit rounded-xl shadow-xl',
                 className,
                 positions[position]

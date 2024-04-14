@@ -52,18 +52,20 @@ const PlanCard: React.FC<PlanCardProps> = ({ name, points, category, price, isAc
             <div className={clsx('flex flex-col 2xl:flex-row', 'items-center gap-6')}>
                 <div
                     className={clsx(
-                        'h-36 w-36',
+                        'h-32 w-32 2xl:h-36 2xl:w-36',
                         'rotate-12 rounded-full border-4 border-gray-100 bg-orange-400 text-white',
                         'flex flex-col items-center justify-center',
                         'relative before:absolute before:top-2 before:h-2 before:w-2 before:rounded-full before:bg-black',
                         'transition duration-150 hover:rotate-20 hover:scale-105',
                         isActive ? 'grayscale-0' : 'grayscale'
                     )}>
-                    <span className="uppercase">start from</span>
-                    <span className="text-5xl font-bold">${price}</span>
-                    <span className="uppercase">/month</span>
+                    <span className="text-xs uppercase 2xl:text-sm">start from</span>
+                    <span className="text-4xl font-bold 2xl:text-5xl">${price}</span>
+                    <span className="text-xs uppercase 2xl:text-sm">/month</span>
                 </div>
-                <h4 className={clsx('text-2xl lg:text-xl 3xl:text-2xl', 'text-center capitalize')}>{category} plan</h4>
+                <h4 className={clsx('text-2xl lg:text-lg 2xl:text-xl 3xl:text-2xl', 'text-center capitalize')}>
+                    {category} plan
+                </h4>
             </div>
         </article>
     )
