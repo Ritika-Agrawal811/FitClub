@@ -47,7 +47,7 @@ const config: Config = {
                 soft: 'rgba(149, 157, 165, 0.2) 0 0.5em 1.5em',
             },
             screens: {
-                xs: '424px',
+                xs: '530px',
                 '3xl': '1680px',
                 '4xl': '1920px',
                 '5xl': '2560px',

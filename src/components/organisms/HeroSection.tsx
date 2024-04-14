@@ -9,9 +9,15 @@ import HeroStatisticsGroup from '@/components/organisms/HeroStatisticsGroup'
 
 const HeroSection = () => {
     return (
-        <header className={clsx('min-h-screen p-8 pb-0', 'flex flex-col', 'bg-texture bg-primary')}>
+        <header className="bg-texture bg-primary py-4 xl:py-8 4xl:py-14">
             <Navbar />
-            <section className="grid grow grid-cols-4">
+            <section
+                className={clsx(
+                    'grid lg:grid-cols-4',
+                    'grow',
+                    'lg:mt-10 4xl:mt-16',
+                    'mx-auto w-90 3xl:w-85 4xl:w-3/4 5xl:w-3/5'
+                )}>
                 {/* left section */}
                 <section className={clsx('col-span-3', 'flex flex-col')}>
                     {/* the best club label*/}
@@ -21,8 +27,8 @@ const HeroSection = () => {
                             'mt-20',
                             'py-2 pl-3 pr-5'
                         )}>
-                        <p className="flex items-center gap-2">
-                            <span className={clsx('rounded-full bg-orange-400', 'px-3.5 py-2.5')}>
+                        <p className={clsx('flex items-center gap-2', 'text-xs sm:text-sm 2xl:text-base')}>
+                            <span className={clsx('rounded-full bg-orange-400', 'p-2 xs:px-3.5 xs:py-2.5')}>
                                 The Best Fitness Club
                             </span>
                             in the Town
@@ -30,15 +36,24 @@ const HeroSection = () => {
                     </div>
 
                     {/* main heading */}
-                    <h1 className={clsx('mt-14', 'text-7xl', 'text-wrap font-bold uppercase leading-tight text-white')}>
+                    <h1
+                        className={clsx(
+                            'mt-10 sm:mt-14',
+                            'text-3xl xs:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl',
+                            'text-wrap font-bold uppercase leading-tight text-white'
+                        )}>
                         <StrokeText title="Shape" className="mr-4" />
                         Your Ideal Body
                     </h1>
 
                     {/* intro-line */}
-                    <p className="mt-4 text-lg text-gray-100">
+                    <p className={clsx('mt-4 text-gray-100 4xl:mt-6', 'text-sm xl:text-base 2xl:text-lg 4xl:text-xl')}>
                         In here we will help you to shape and build your ideal body and{' '}
-                        <span className="text-xl font-medium uppercase text-orange-400">
+                        <span
+                            className={clsx(
+                                'xl:text-lg 2xl:text-xl 4xl:text-2xl',
+                                'font-medium uppercase text-orange-400'
+                            )}>
                             live up your life to the fullest.
                         </span>
                     </p>
@@ -46,13 +61,13 @@ const HeroSection = () => {
                     <HeroStatisticsGroup />
 
                     {/* Call to action buttons */}
-                    <div className="my-auto flex gap-6 self-start">
+                    <div className="mt-10 self-start 4xl:mt-14">
                         <Button label="Find the nearest gym" />
                     </div>
                 </section>
 
                 {/* right section */}
-                <aside className="relative">
+                <aside className="relative hidden lg:block">
                     <Image
                         src="/hero_image.png"
                         alt=""
@@ -68,7 +83,7 @@ const HeroSection = () => {
                         height="200"
                         className={clsx(
                             'absolute aspect-auto w-4/5',
-                            '-left-1/4 top-1/2 -translate-y-1/2',
+                            '-left-2 top-1/2 -translate-y-1/2 xl:-left-4',
                             'z-10 -rotate-45'
                         )}
                     />

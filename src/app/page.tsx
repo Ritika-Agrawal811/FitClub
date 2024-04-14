@@ -13,7 +13,7 @@ import HappyMembers from '@/components/organisms/HappyMembers'
 export default function Home() {
     return (
         <main>
-            {/* <HeroSection /> */}
+            <HeroSection />
             <AboutUs />
             <Programs />
             <WhyUs />

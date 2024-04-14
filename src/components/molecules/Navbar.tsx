@@ -23,36 +23,42 @@ const linkVariant = {
 
 const Navbar = () => {
     return (
-        <nav className={clsx('w-full', 'flex items-center justify-between')}>
-            <Link href="/">
-                <Image src="/logo.png" alt="fitclub logo" width={332} height={88} className="aspect-auto w-48" />
-            </Link>
-            <div className="flex items-center gap-8">
-                <ul className="flex gap-8">
-                    {navLinks.map((link) => {
-                        const { label, url } = link
-                        return (
-                            <motion.li
-                                key={label}
-                                initial="rest"
-                                animate="rest"
-                                whileHover="hover"
-                                className={clsx('text-lg font-medium text-white', 'overflow-hidden')}>
-                                <Link href={url}>
-                                    <motion.span
-                                        variants={linkVariant}
-                                        data-content={label}
-                                        className={clsx(
-                                            'relative block before:absolute before:-bottom-7 before:text-orange-400 before:content-[attr(data-content)]'
-                                        )}>
-                                        {label}
-                                    </motion.span>
-                                </Link>
-                            </motion.li>
-                        )
-                    })}
-                </ul>
-                <Button label="join now" size="small" />
+        <nav>
+            <div
+                className={clsx(
+                    'hidden items-center justify-between lg:flex',
+                    'mx-auto w-90 3xl:w-85 4xl:w-3/4 5xl:w-3/5'
+                )}>
+                <Link href="/">
+                    <Image src="/logo.png" alt="fitclub logo" width={332} height={88} className="aspect-auto w-48" />
+                </Link>
+                <div className="flex items-center gap-8">
+                    <ul className="flex gap-8">
+                        {navLinks.map((link) => {
+                            const { label, url } = link
+                            return (
+                                <motion.li
+                                    key={label}
+                                    initial="rest"
+                                    animate="rest"
+                                    whileHover="hover"
+                                    className={clsx('text-lg font-medium text-white', 'overflow-hidden')}>
+                                    <Link href={url}>
+                                        <motion.span
+                                            variants={linkVariant}
+                                            data-content={label}
+                                            className={clsx(
+                                                'relative block before:absolute before:-bottom-7 before:text-orange-400 before:content-[attr(data-content)]'
+                                            )}>
+                                            {label}
+                                        </motion.span>
+                                    </Link>
+                                </motion.li>
+                            )
+                        })}
+                    </ul>
+                    <Button label="join now" size="small" />
+                </div>
             </div>
         </nav>
     )
