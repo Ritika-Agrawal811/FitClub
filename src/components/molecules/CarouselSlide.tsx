@@ -30,10 +30,10 @@ const CarouselSlide: React.FC<CarouselSlideProps> = ({ workouts }) => {
 
     return (
         <section className={clsx('mt-6 lg:mt-14', 'grid grid-cols-6', 'gap-6 xl:gap-10')}>
-            <figure className="relative col-span-6 lg:col-span-3 lg:h-[25em] 3xl:h-[32em]">
+            <figure className='relative col-span-6 lg:col-span-3 lg:h-[25em] 3xl:h-[32em]'>
                 <Image
                     src={`/fitness_classes/${image}`}
-                    alt="a person lifting weights"
+                    alt='a person lifting weights'
                     width={500}
                     height={300}
                     className={clsx('h-full w-full object-cover lg:absolute', 'border-8 border-orange-600')}
@@ -54,13 +54,13 @@ const CarouselSlide: React.FC<CarouselSlideProps> = ({ workouts }) => {
                     </p>
                 </div>
 
-                <div className="flex items-center gap-4">
+                <div className='flex items-center gap-4'>
                     {workouts.map((item, index) => {
                         return (
                             <Image
                                 key={index}
                                 src={`/fitness_classes/${item.image}`}
-                                alt=""
+                                alt=''
                                 width={500}
                                 height={300}
                                 className={clsx(
@@ -85,9 +85,9 @@ const CarouselSlide: React.FC<CarouselSlideProps> = ({ workouts }) => {
                     'bg-gray-900'
                 )}>
                 <NavigateButton
-                    variant="outline"
-                    className="shrink-0 lg:-mt-8"
-                    type="next"
+                    variant='outline'
+                    className='shrink-0 lg:-mt-8'
+                    type='next'
                     onClick={showNextSlideHandler}
                 />
                 <h3

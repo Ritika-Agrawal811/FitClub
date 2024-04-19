@@ -8,7 +8,7 @@ import ProgramCard from '@/components/molecules/ProgramCard'
 
 const Programs = () => {
     return (
-        <Wrapper variant="main" className="relative" id="programs">
+        <Wrapper variant='main' className='relative' id='programs'>
             <div
                 className={clsx(
                     'absolute left-0 top-0 -z-10 w-full',
@@ -20,11 +20,11 @@ const Programs = () => {
                     'text-3xl sm:text-4xl lg:text-5xl 2xl:text-6xl 3xl:text-7xl',
                     'text-center font-bold uppercase text-white'
                 )}>
-                Explore Our <StrokeText title="Programs" />
+                Explore Our <StrokeText title='Programs' />
             </h2>
 
             <Wrapper
-                variant="section"
+                variant='section'
                 className={clsx('grid sm:grid-cols-2 2xl:grid-cols-4', 'gap-x-12 gap-y-32 2xl:gap-8')}>
                 {programs.map((program, index) => {
                     return <ProgramCard key={index} index={index} {...program} />

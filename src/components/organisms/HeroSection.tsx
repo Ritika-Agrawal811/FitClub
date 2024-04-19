@@ -9,7 +9,7 @@ import HeroStatisticsGroup from '@/components/organisms/HeroStatisticsGroup'
 
 const HeroSection = () => {
     return (
-        <header className="bg-texture bg-primary py-4 xl:py-8 4xl:py-14">
+        <header className='bg-texture bg-primary py-4 xl:py-8 4xl:py-14'>
             <Navbar />
             <section
                 className={clsx(
@@ -42,7 +42,7 @@ const HeroSection = () => {
                             'text-3xl xs:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl',
                             'text-wrap font-bold uppercase leading-tight text-white'
                         )}>
-                        <StrokeText title="Shape" className="mr-4" />
+                        <StrokeText title='Shape' className='mr-4' />
                         Your Ideal Body
                     </h1>
 
@@ -61,26 +61,26 @@ const HeroSection = () => {
                     <HeroStatisticsGroup />
 
                     {/* Call to action buttons */}
-                    <div className="mt-10 self-start 4xl:mt-14">
-                        <Button label="Find the nearest gym" />
+                    <div className='mt-10 self-start 4xl:mt-14'>
+                        <Button label='Find the nearest gym' />
                     </div>
                 </section>
 
                 {/* right section */}
-                <aside className="relative hidden lg:block">
+                <aside className='relative hidden lg:block'>
                     <Image
-                        src="/hero_image.png"
-                        alt=""
-                        width="600"
-                        height="900"
+                        src='/hero_image.png'
+                        alt=''
+                        width='600'
+                        height='900'
                         className={clsx('absolute aspect-auto w-full', 'bottom-0', 'z-20')}
                     />
 
                     <Image
-                        src="/hero_image_back.png"
-                        alt=""
-                        width="200"
-                        height="200"
+                        src='/hero_image_back.png'
+                        alt=''
+                        width='200'
+                        height='200'
                         className={clsx(
                             'absolute aspect-auto w-4/5',
                             '-left-2 top-1/2 -translate-y-1/2 xl:-left-4',

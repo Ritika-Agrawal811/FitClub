@@ -38,7 +38,7 @@ const QuoteBlock: React.FC<QuoteBlockProps> = ({ title, strokeText, quote, class
                     return (
                         <Icon
                             key={index}
-                            type="QUOTES"
+                            type='QUOTES'
                             className={clsx(
                                 'h-12 w-12 xs:h-16 xs:w-16 2xl:h-20 2xl:w-20',
                                 'absolute fill-orange-600',

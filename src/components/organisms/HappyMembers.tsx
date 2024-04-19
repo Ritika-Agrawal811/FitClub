@@ -9,7 +9,7 @@ import Image from 'next/image'
 
 const HappyMembers = () => {
     return (
-        <Wrapper variant="main" className={clsx('relative h-[500px]', 'flex items-center justify-center')}>
+        <Wrapper variant='main' className={clsx('relative h-[500px]', 'flex items-center justify-center')}>
             <h2
                 className={clsx(
                     'text-6xl sm:text-8xl md:text-9xl 2xl:text-10xl',
@@ -18,8 +18,8 @@ const HappyMembers = () => {
                     'tabular-nums'
                 )}>
                 {' '}
-                <CountUp start={99970} end={100000} duration={5} separator="," enableScrollSpy={true} />
-                <span className="text-3xl text-orange-400 sm:text-5xl 2xl:text-6xl 3xl:text-7xl">Happy members</span>
+                <CountUp start={99970} end={100000} duration={5} separator=',' enableScrollSpy={true} />
+                <span className='text-3xl text-orange-400 sm:text-5xl 2xl:text-6xl 3xl:text-7xl'>Happy members</span>
             </h2>
 
             {members.map((item, index) => {
@@ -36,12 +36,12 @@ const HappyMembers = () => {
                                 },
                             },
                         }}
-                        whileInView="animate"
+                        whileInView='animate'
                         className={clsx('absolute', index > 3 && 'hidden sm:block')}
                         style={{ left: `${left}%`, top: `${top}%` }}>
                         <Image
                             src={`/testimonials/${url}`}
-                            alt=""
+                            alt=''
                             width={300}
                             height={300}
                             className={clsx('rounded-full object-cover', 'h-16 w-16 2xl:h-20 2xl:w-20')}

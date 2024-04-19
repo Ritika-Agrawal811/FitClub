@@ -8,22 +8,22 @@ import Tag from '@/components/atoms/Tag'
 
 const AboutUs = () => {
     return (
-        <Wrapper variant="main" className="bg-gray-900" id="about-us">
-            <Wrapper variant="section" className={clsx('grid gap-10 lg:grid-cols-2 xl:gap-20', 'mb-10 lg:mb-16')}>
-                <div className="relative">
+        <Wrapper variant='main' className='bg-gray-900' id='about-us'>
+            <Wrapper variant='section' className={clsx('grid gap-10 lg:grid-cols-2 xl:gap-20', 'mb-10 lg:mb-16')}>
+                <div className='relative'>
                     <Image
-                        src="/person-lifting-weights.png"
-                        alt="a person lifting weights"
+                        src='/person-lifting-weights.png'
+                        alt='a person lifting weights'
                         width={500}
                         height={300}
-                        className="h-full w-full object-cover"
+                        className='h-full w-full object-cover'
                     />
 
                     <Tag
                         label={['Professional', 'Trainers']}
-                        icon="TRAINER"
-                        position="bottom-right"
-                        className="bg-white text-sm xs:text-base 2xl:text-lg"
+                        icon='TRAINER'
+                        position='bottom-right'
+                        className='bg-white text-sm xs:text-base 2xl:text-lg'
                     />
                 </div>
                 <div>
@@ -32,7 +32,7 @@ const AboutUs = () => {
                             'text-2xl sm:text-3xl lg:text-4xl 2xl:text-5xl 3xl:text-6xl',
                             'font-bold uppercase text-white'
                         )}>
-                        Get Ready To Reach your <span className="text-orange-400">fitness goal</span>
+                        Get Ready To Reach your <span className='text-orange-400'>fitness goal</span>
                     </h2>
                     <p
                         className={clsx(
@@ -55,7 +55,7 @@ const AboutUs = () => {
                         We believe that everyone should have access to the benefits of exercise and a healthy body and
                         life. Get to know us better and discover how we can help you unlock your full potential.{' '}
                     </p>
-                    <Button label="Request Free Trial" className="mt-6 2xl:mt-10 4xl:mt-12" />
+                    <Button label='Request Free Trial' className='mt-6 2xl:mt-10 4xl:mt-12' />
                 </div>
             </Wrapper>
         </Wrapper>

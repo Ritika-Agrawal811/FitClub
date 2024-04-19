@@ -25,25 +25,25 @@ const Navbar = () => {
     return (
         <nav>
             <div className={clsx('flex items-center justify-between', 'mx-auto w-90 3xl:w-85 4xl:w-3/4 5xl:w-3/5')}>
-                <Link href="/">
+                <Link href='/'>
                     <Image
-                        src="/logo.png"
-                        alt="fitclub logo"
+                        src='/logo.png'
+                        alt='fitclub logo'
                         width={332}
                         height={88}
-                        className="aspect-auto w-40 xl:w-48"
+                        className='aspect-auto w-40 xl:w-48'
                     />
                 </Link>
-                <div className="hidden items-center gap-8 lg:flex">
-                    <ul className="flex gap-8">
+                <div className='hidden items-center gap-8 lg:flex'>
+                    <ul className='flex gap-8'>
                         {navLinks.map((link) => {
                             const { label, url } = link
                             return (
                                 <motion.li
                                     key={label}
-                                    initial="rest"
-                                    animate="rest"
-                                    whileHover="hover"
+                                    initial='rest'
+                                    animate='rest'
+                                    whileHover='hover'
                                     className={clsx('text-lg font-medium text-white', 'overflow-hidden')}>
                                     <Link href={url}>
                                         <motion.span
@@ -59,7 +59,7 @@ const Navbar = () => {
                             )
                         })}
                     </ul>
-                    <Button label="join now" size="small" />
+                    <Button label='join now' size='small' />
                 </div>
             </div>
         </nav>

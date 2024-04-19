@@ -16,7 +16,7 @@ const StatCard: React.FC<StatCardProps> = ({ statCount, title }) => {
             )}>
             <h4 className={clsx('text-2xl lg:text-3xl xl:text-4xl 4xl:text-5xl', 'font-bold text-orange-400')}>
                 {statCount}
-                <span className="text-white">+</span>
+                <span className='text-white'>+</span>
             </h4>
             <p className={clsx('uppercase text-gray-100', 'text-sm xl:text-base 4xl:text-lg')}>{title}</p>
         </article>

@@ -24,7 +24,7 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({ name, age, review, im
             <p className={clsx('relative', 'text-lg font-bold text-gray-900')}>
                 {review}
                 <Icon
-                    type="QUOTES"
+                    type='QUOTES'
                     className={clsx(
                         'h-16 w-16',
                         '-scale-x-100 -scale-y-100 fill-orange-600',
@@ -33,16 +33,16 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({ name, age, review, im
                 />
             </p>
 
-            <div className="flex items-center gap-4">
+            <div className='flex items-center gap-4'>
                 <Image
                     src={`/testimonials/${image}`}
-                    alt=""
+                    alt=''
                     width={500}
                     height={300}
-                    className="h-16 w-16 rounded-full object-cover"
+                    className='h-16 w-16 rounded-full object-cover'
                 />
                 <div>
-                    <h4 className="font-medium">{name}</h4>
+                    <h4 className='font-medium'>{name}</h4>
                     <p>{age} years</p>
                 </div>
             </div>

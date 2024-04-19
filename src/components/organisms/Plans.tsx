@@ -9,14 +9,14 @@ import PlanCard from '../molecules/PlanCard'
 const Plans = () => {
     const [activePlan, setActivePlan] = useState<ActivePlan>('basic')
     return (
-        <Wrapper variant="main" id="plans">
-            <Wrapper variant="section" className={clsx('bg-texture bg-primary', 'py-1 pt-16', 'rounded-3xl')}>
+        <Wrapper variant='main' id='plans'>
+            <Wrapper variant='section' className={clsx('bg-texture bg-primary', 'py-1 pt-16', 'rounded-3xl')}>
                 <h2
                     className={clsx(
                         'text-3xl sm:text-4xl lg:text-5xl 2xl:text-6xl 3xl:text-7xl',
                         'text-center font-bold uppercase text-white'
                     )}>
-                    Choose Your <StrokeText title="Best plan" />
+                    Choose Your <StrokeText title='Best plan' />
                 </h2>
 
                 <div className={clsx('rounded-3xl bg-primary', 'p-2 sm:p-4 xl:p-6', 'mx-auto w-90', 'my-10 lg:my-16')}>

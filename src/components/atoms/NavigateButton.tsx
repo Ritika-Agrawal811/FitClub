@@ -25,8 +25,8 @@ const NavigateButton = ({ variant, className, type, onClick }: NavigateButtonPro
                 navigateButtonVariants[variant]
             )}
             onClick={onClick}>
-            <Icon type={type === 'prev' ? 'ARROW_LEFT' : 'ARROW_RIGHT'} className="text-2xl lg:text-3xl" />
-            <span className="text-sm uppercase lg:text-base 3xl:text-lg">{type}</span>
+            <Icon type={type === 'prev' ? 'ARROW_LEFT' : 'ARROW_RIGHT'} className='text-2xl lg:text-3xl' />
+            <span className='text-sm uppercase lg:text-base 3xl:text-lg'>{type}</span>
         </button>
     )
 }

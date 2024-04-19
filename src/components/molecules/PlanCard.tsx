@@ -21,7 +21,7 @@ const PlanCard: React.FC<PlanCardProps> = ({ name, points, category, price, isAc
                 isActive ? 'text-white' : 'text-gray-200'
             )}
             onClick={onClick}>
-            <div className="flex flex-col items-center lg:items-start">
+            <div className='flex flex-col items-center lg:items-start'>
                 <h3
                     className={clsx(
                         'text-xl xs:text-2xl sm:text-3xl 2xl:text-4xl 3xl:text-5xl',
@@ -59,9 +59,9 @@ const PlanCard: React.FC<PlanCardProps> = ({ name, points, category, price, isAc
                         'transition duration-150 hover:rotate-20 hover:scale-105',
                         isActive ? 'grayscale-0' : 'grayscale'
                     )}>
-                    <span className="text-xs uppercase 2xl:text-sm">start from</span>
-                    <span className="text-4xl font-bold 2xl:text-5xl">${price}</span>
-                    <span className="text-xs uppercase 2xl:text-sm">/month</span>
+                    <span className='text-xs uppercase 2xl:text-sm'>start from</span>
+                    <span className='text-4xl font-bold 2xl:text-5xl'>${price}</span>
+                    <span className='text-xs uppercase 2xl:text-sm'>/month</span>
                 </div>
                 <h4 className={clsx('text-2xl lg:text-lg 2xl:text-xl 3xl:text-2xl', 'text-center capitalize')}>
                     {category} plan

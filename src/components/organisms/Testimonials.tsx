@@ -15,13 +15,13 @@ const Testimonials = () => {
     }
 
     return (
-        <Wrapper variant="main" id="testimonials">
+        <Wrapper variant='main' id='testimonials'>
             <h2
                 className={clsx(
                     'text-3xl sm:text-4xl lg:text-5xl 2xl:text-6xl 3xl:text-7xl',
                     'text-center font-bold uppercase text-gray-900'
                 )}>
-                What <span className="text-orange-400">our clients</span> say
+                What <span className='text-orange-400'>our clients</span> say
             </h2>
 
             <div className={clsx('relative mt-16 overflow-hidden', 'h-[32em] xl:h-[38em] 2xl:h-[44em]')}>
@@ -53,7 +53,7 @@ const Testimonials = () => {
                     {['prev', 'next'].map((direction, index) => (
                         <NavigateButton
                             key={index}
-                            variant="fill"
+                            variant='fill'
                             type={direction as Direction}
                             onClick={() => rotateTestimonialsHandler(direction as Direction)}
                         />

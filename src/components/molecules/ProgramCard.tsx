@@ -37,7 +37,7 @@ const ProgramCard: React.FC<ProgramCardProps> = ({ title, description, icon, ind
                     'absolute -bottom-14 left-1/2 -translate-x-1/2',
                     'mx-auto rounded-full bg-orange-400 outline outline-4 outline-offset-8 outline-orange-600'
                 )}>
-                <Icon type={icon} className="h-10 w-20 fill-white md:h-12 md:w-20" />
+                <Icon type={icon} className='h-10 w-20 fill-white md:h-12 md:w-20' />
             </div>
             <span
                 className={clsx(

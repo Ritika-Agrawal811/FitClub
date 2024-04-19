@@ -26,9 +26,9 @@ const Tag: React.FC<TagProps> = ({ label, icon, position, className }) => {
                 type={icon}
                 className={clsx('h-10 w-10 xs:h-12 xs:w-12 lg:h-14 lg:w-14 2xl:h-16 2xl:w-16', 'fill-orange-400')}
             />
-            <p className="font-bold">
+            <p className='font-bold'>
                 {firstLine} <br />{' '}
-                {secondLine && <span className="text-sm xs:text-base 2xl:text-lg">{secondLine}</span>}
+                {secondLine && <span className='text-sm xs:text-base 2xl:text-lg'>{secondLine}</span>}
             </p>
         </div>
     )

@@ -16,18 +16,18 @@ const FitnessClass = () => {
         setActiveTab(course)
     }
     return (
-        <Wrapper variant="main">
+        <Wrapper variant='main'>
             <h2
                 className={clsx(
                     'text-3xl sm:text-4xl lg:text-5xl 2xl:text-6xl 3xl:text-7xl',
                     'text-center font-bold uppercase text-gray-900'
                 )}>
-                Our <span className="text-orange-400">Fitness Class</span>
+                Our <span className='text-orange-400'>Fitness Class</span>
             </h2>
-            <Wrapper variant="section">
+            <Wrapper variant='section'>
                 {/* tabs */}
-                <div className="overflow-x-scroll lg:overflow-hidden">
-                    <ul className="flex justify-around gap-6 lg:gap-0">
+                <div className='overflow-x-scroll lg:overflow-hidden'>
+                    <ul className='flex justify-around gap-6 lg:gap-0'>
                         {classes.map((course, index) => {
                             return (
                                 <li
